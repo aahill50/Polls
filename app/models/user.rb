@@ -15,4 +15,10 @@ class User < ActiveRecord::Base
     primary_key: :id
   )
 
+  has_many(
+    :authored_questions,
+    through: :authored_polls,
+    source: :questions
+  )
 end
+
