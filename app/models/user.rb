@@ -14,4 +14,5 @@ class User < ActiveRecord::Base
     foreign_key: :respondent_id,
     primary_key: :id
   )
+
 end
